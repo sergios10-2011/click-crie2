@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escola Gregório Bezerra</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ece4e4;
+      color: #333;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #d8ddfe;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+    .header .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .header .logo img {
+      height: 30px;
+    }
+    .header .search {
+      flex-grow: 1;
+      text-align: center;
+    }
+    .header .search h1 {
+      font-size: 18px;
+    }
+    .sidebar {
+      width: 220px;
+      background-color: #504e51;
+      padding-top: 20px;
+      height: calc(100vh - 50px);
+      position: fixed;
+      top: 50px;
+      left: 0;
+      overflow-y: auto;
+      border-right: 1px solid #ccc;
+    }
+    .sidebar a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #e4e5e9;
+      font-weight: bold;
+    }
+    .sidebar a:hover {
+      background-color: #510bd5;
+    }
+    .main {
+      margin-left: 220px;
+      padding: 20px;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .video-card {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .video-card video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .video-card .info {
+      padding: 10px;
+    }
+    .video-card .info h3 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      margin-top: 40px;
+    }
+
+    /* Responsividade para telas menores */
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .sidebar a {
+        padding: 10px;
+        flex: 1 1 45%;
+        text-align: center;
+      }
+
+      .main {
+        margin-left: 0;
+        padding: 15px;
+      }
+
+      .header .search h1 {
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+      }
+
+      .video-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .imagens{
+      width: 100%;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="logo1.jpg" alt="Logo">
+    </div>
+    <div class="search">
+      <h1>E E Dep Gregório Bezerra</h1>
+    </div>
+    <div class="user-actions">
+      <!-- Ícones de usuário (se houver) -->
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <a href="index.html">Início</a>
+    <a href="escola.html">Sobre a Escola</a>
+    <a href="#">Projetos</a>
+    <a href="#">Eventos</a>
+    <a href="#">Vídeos Educativos</a>
+    <a href="#">Canal dos Alunos</a>
+    <a href="#">Contato</a>
+    <a href="eletivas.html">Eletivas</a>
+  </div>
+
+  <div class="main">
+    <h2>ELETIVAS 2025<br><br></h2>
+    <div class="video-grid">
+      <div class="video-card">
+        <a href="roboticadia.html">
+        <img src="robotica/robotica.jpeg" class="imagens" ></a>
+        <div class="info">
+          <h3>Eletiva de robotica</h3>
+          <p>Profª </p>
+        </div>
+      </div>
+      <div class="video-card">
+       <a href="#">
+        <img src="robotica/robotica.jpeg" class="imagens" ></a>
+        <div class="info">
+          <h3>Eletiva</h3>
+          <p>prof</p>
+        </div>
+      </div>
+      <div class="video-card">
+         <a href="#">
+        <img src="robotica/robotica.jpeg" class="imagens" ></a>
+        <div class="info">
+          <h3>Eletiva</h3>
+          <p>prof</p>
+        </div>
+      </div>
+       <div class="video-card">
+        <a href="#">
+        <img src="robotica/robotica.jpeg" class="imagens" ></a>
+        <div class="info">
+          <h3>Eletiva </h3>
+          <p>Profª </p>
+        </div>
+      </div>
+       <div class="video-card">
+        <a href="#">
+        <img src="robotica/robotica.jpeg" class="imagens" ></a>
+        <div class="info">
+          <h3>Eletiva </h3>
+          <p>Profª </p>
+        </div>
+      </div>
+       <div class="video-card">
+        <a href="#">
+        <img src="robotica/robotica.jpeg" class="imagens" ></a>
+        <div class="info">
+          <h3>Eletiva </h3>
+          <p>Profª </p>
+        </div>
+      </div>
+       <div class="video-card">
+        <a href="#">
+        <img src="robotica/robotica.jpeg" class="imagens" ></a>
+        <div class="info">
+          <h3>Eletiva </h3>
+          <p>Profª </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Escola Deputado Gregório Bezerra. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
